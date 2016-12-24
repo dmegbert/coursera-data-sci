@@ -30,3 +30,47 @@ for(i in seq_len(nrow(x))) {
   }
 }
 
+#while loop
+
+count <- 0
+
+while(count<10) {
+  print(count)
+  count <- count + 1
+}
+
+z<-5
+
+while(z >= 3 && z <= 10) {
+  print(z)
+  coin <- rbinom(1, 1, 0.5)
+  
+  if(coin == 1) {
+    z <- z + 1
+  }else {
+    z <- z-1
+  }
+}
+
+x0 <- 1
+tol <- 1e-8
+
+repeat{
+  x1 <- computeEstimate()
+  
+  if(abs(x1 - x0) < tol) {
+    break
+  }else {
+    x0 <- x1
+  }
+}
+
+#next is used to skip an interation of a loop
+
+for(i in 1:100) {
+  if(i<=20) {
+    ##Skip the first 20 iterations
+    next
+  }
+  print(i)
+}
