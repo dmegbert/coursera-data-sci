@@ -91,3 +91,20 @@ f2 <- gl(5, 2)
 interaction(f1,f2)
 str(split(x, list(f1,f2)))
 str(split(x, list(f1,f2), drop = TRUE))
+
+log(-1)
+printmessage <- function(x) {
+    if(is.na(x))
+        print("x is a missing value")
+    else if(x>0)
+        print("x is greater than 0")
+    else
+        print("x is less than 0")
+    invisible(x)
+}
+y<-printmessage(-25)
+y
+printmessage(NA)
+
+library(datasets)
+data(iris)
