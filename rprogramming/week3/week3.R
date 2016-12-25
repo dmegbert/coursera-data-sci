@@ -1,4 +1,4 @@
-#playing with git
+#playing with git part 2
 x <- list(a = 1:5, b = rnorm(10))
 lapply(x, mean)
 
