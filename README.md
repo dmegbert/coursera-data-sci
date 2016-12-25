@@ -1,2 +1,3 @@
 # coursera-data-sci
-###Repo to hold all my code for the Data Science Specialization from Johns Hopkins University on Coursera
+###Data Science Specialization from Johns Hopkins University on Coursera<br>
+###Each folder represents a course, <br> i.e., rprogramming contains work from the 2nd course - R Programming
