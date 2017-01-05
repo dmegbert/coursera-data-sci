@@ -41,7 +41,7 @@ testMat <- matrix(rnorm(1000000), 1000, 1000)
 specailMat <- makeCacheMatrix(testMat)
 
 #compute the inverse of the matrix
-cacheSolve(specailMat)
+system.time(cacheSolve(specailMat)) 
 
 #retrieve the inverse of the matrix from cache
-cacheSolve(specailMat)
+system.time(cacheSolve(specailMat))

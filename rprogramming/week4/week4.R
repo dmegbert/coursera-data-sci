@@ -64,3 +64,17 @@ sample(1:10, 4)
 sample(letters, 5)
 sample(1:10)
 sample(1:10, 4, replace = TRUE)
+
+# Use of Profiler and Code optimization
+
+#Elapsed time > user time
+system.time(readLines("http://www.jhsph.edu"))
+
+# Elapsed time < user time
+
+hilbert <- function(n) {
+    i <- 1:n
+    1/outer(i-1, i, "+")
+}
+x <- hilbert(1000)
+system.time(svd(x))
